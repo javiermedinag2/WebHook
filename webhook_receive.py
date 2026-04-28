@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def receive_webhook():
     data = request.get_json()
-    print("Datos recibidos por NGROK:", data)
+    print("Datos recibidos por NGROK desde Github:", data)
     # En este punto, puedes procesar los datos recibidos como desees
     return "Webhook recibido exitosamente", 200
 if __name__ == '__main__':
