@@ -1,5 +1,5 @@
 from flask import Flask, request
-
+# Este código crea un servidor Flask que escucha en el puerto 5000 para recibir solicitudes POST en la ruta /webhook. Cuando se recibe una solicitud, se extraen los datos JSON y se imprimen en la consola. Puedes personalizar el procesamiento de los datos según tus necesidades.   
 app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
